@@ -25,12 +25,10 @@ namespace VendingMachine
                         VendingMachine(DisplayAll());
                         break;
                     case 2:
-                        Money1();
-                        Display2();
+                        VendingMachine(MoneyPool());
+                        VendingMachine(DisplayAll());
                         Purchase;
-                        HowToUse;
-                        Money;
-                        QuestionToRepeatOrExit;//in here, there will be refund money or loop to start again
+                        //in here, there will be refund money or loop to start again
                         break;
                     case 3:
                         Console.WriteLine("Thank you and have a good day!");
@@ -81,8 +79,8 @@ namespace VendingMachine
             int selectProduct = Convert.ToInt32(Console.ReadLine());
 
             if (selectProduct == 1)
-            { 
-            
+            {
+
             }
 
         }
